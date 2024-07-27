@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(218, 80, 144); /* Background color of the page */
+}
+
+.typing-text {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+    font-size: 36px;
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+nav {
+    background-color: black;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 75px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 40px; /* Space between sections */
+}
+
+section h1, section h2 {
+    margin: 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Space between skill boxes */
+    padding: 20px;
+}
+
+.skill-box {
+    background-color: black;
+    color: white;
+    width: 150px; /* Width of the skill box */
+    height: 150px; /* Height of the skill box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 10px;
+}
+
+.skill-bar {
+    background-color: rgb(223, 69, 141); /* Pink color for the filled bar */
+    height: 20px; /* Height of the skill bar */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px; /* Adjusted space from the bottom */
+    left: 10px;
+    right: 10px;
+    z-index: 1; /* Ensure it is behind the text */
+}
+
+.skill-box .percentage {
+    font-size: 24px; /* Font size for percentage */
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between the bar and percentage */
+    z-index: 2; /* Ensure it is above the bar */
+}
+
+.skill-box p {
+    margin: 0;
+    font-size: 18px; /* Font size for skill names */
+    z-index: 2; /* Ensure it is above the bar */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 15px; /* Space between icons */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ddd; /* Icon color on hover */
+}
+
+.social-links i {
+    transition: color 0.3s;
+}
+#certifications {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light background color for contrast */
+}
+
+.certification-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between certification items */
+}
+
+.certification-item {
+    background-color: white;
+    color: black;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.certification-item h3 {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(218, 80, 144); /* Title color */
+}
+
+.certification-item p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.certification-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.certification-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(218, 80, 144); /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certification-link:hover {
+    text-decoration: underline;
+}

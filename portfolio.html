@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome CDN -->
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1 class="typing-text">MARUTHI PRASANNA EEMANI</h1>
+    <p>I’m a Web Developer</p>
+    <p>A web developer focuses on front end and backend.</p>
+  </section>
+
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>Hello, I'm Eemani Maruthi Prasanna, a second-year engineering student at Kakinada Institute of Engineering and Technology for Women, majoring in Artificial Intelligence. I am passionate about problem-solving and excited about the endless possibilities in engineering. My journey includes a range of subjects, from notable courses to hands-on projects. I dream of reaching a top position at Amazon. Outside of academics, I enjoy drawing and listening to music, which bring fresh perspectives to my studies. I'm eager to learn, grow, and connect with others who share my passion for engineering.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <div class="skill-bar" style="width: 90%;"></div>
+        <span class="percentage">90%</span>
+        <p>HTML</p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-bar" style="width: 85%;"></div>
+        <span class="percentage">85%</span>
+        <p>CSS</p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-bar" style="width: 75%;"></div>
+        <span class="percentage">45%</span>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-bar" style="width: 80%;"></div>
+        <span class="percentage">80%</span>
+        <p>Python</p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-bar" style="width: 70%;"></div>
+        <span class="percentage">70%</span>
+        <p>Machine Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1>Projects</h1>
+    <h2>WATER QUALITY PREDICTION</h2>
+    <p>OBJECTIVE: The objective of this project is to predict the quality of water based on various physical and chemical parameters using machine learning techniques. The primary parameters include turbidity, hardness, pH, temperature, dissolved oxygen, conductivity, and others. By analyzing these parameters, we aim to classify the water quality into different categories such as safe or not safe.</p>
+    <div class="project-images">
+      <img src="waterui.jpeg" alt="Project Image 1">
+      <img src="wateroutput.jpeg" alt="Project Image 2">
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>1. Currently working at GCC as an intern.</p>
+    <p>2. Worked for 6 months at TECH-LEADS-KIET as a Machine Learning Trainee.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <p>NATIONAL MEANS MERIT SCHOLARSHIP TEST BY CENTRAL GOVERNMENT OF INDIA, 2018</p>
+    <p>Awarded Merit Certificate for Outstanding Performance in this test during my 8th Standard.</p>
+    <p>Participated in several talent tests and quizzes at the school level.</p>
+    <p>Received rewards for exceptional performance in various academic competitions.</p>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certification-list">
+      <div class="certification-item">
+        <h3>Foundation Of Modern Machine Learning</h3>
+        <p>Issuing Organization:IIT HYDERABAD</p>
+        <img src="fmmlcer.jpeg" alt="FMML" class="certification-image">
+      </div>
+      <div class="certification-item">
+        <h3>CloudEnvesining</h3>
+        <p>Issuing Organization: IBM</p>
+        <img src="journey to cloud.jpeg" alt="Cloudenvesioning" class="certification-image">
+      </div>
+      <div class="certification-item">
+        <h3>Basics of python</h3>
+        <p>Issuing Organization: edyst</p>
+        <img src="Basic py certificate.jpg" alt="Basics of python" class="certification-image">
+      </div>
+      <div class="certification-item">
+        <h3>Intro to Python </h3>
+        <p>Issuing Organization: edyst</p>
+        <img src="intro py certificate.jpg" alt="Intro To Python 2" class="certification-image">
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact-me">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="post" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/maruthi-prasanna-eemani-75921a289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn Profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Maruthiprasanna-25" target="_blank" title="GitHub Profile">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:maruthiprasannaeemani@gmail.com" title="Email Me">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+</body>
+</html>
