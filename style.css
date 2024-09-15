@@ -164,7 +164,7 @@ section h1, section h2 {
 #certifications {
     padding: 60px 20px;
     text-align: center;
-    background-color: #f4f4f4; /* Light background color for contrast */
+    background-color: rgb(223, 69, 141); /
 }
 
 .certification-list {
